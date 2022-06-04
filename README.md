@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Implement High Fidelity Designs with Material-UI and ReactJS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bridge the gap between Design & Development! Break down detailed designs and bring them to life with Material-UI/React.  
+Instructor: Zachary Reece
+Course Repository:
 
-## Available Scripts
+Project 1: https://github.com/zreecespieces/material-ui-course-create-react-app  
+Project 2: https://github.com/zreecespieces/material-ui-course-project-manager  
+Project 1 Next.js:
+https://github.com/zreecespieces/material-ui-course-nextjs
 
-In the project directory, you can run:
+## What you'll learn
 
-### `npm start`
+- Create beautifully designed production applications from scratch with Material-UI
+- Refine UX/UI design intuition and see concepts in action
+- Migrate from create-react-app to Next JS
+- Export and efficiently integrate animations with react-lottie
+- Ensure cross-browser support with your styles in Material-UI
+- Build applications that look perfect on every screen with Material-UI's responsive design system
+- Search Engine Optimization in React JS
+- Use serverless functions with Firebase
+- Collect data and track events with Google Analytics in React JS
+- Deploy production Material-UI/React JS applications
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Course content
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+16 sections • 247 lectures • 40h 41m total length
 
-### `npm test`
+- Introduction
+- Take It From The Top - Headers and Navigation
+- Adding Header Features - Menus and Responsive Design
+- Bottoms Up! Footers and Basic Layouts
+- Hitting The Ground Runnig - Animations and The Landing Page
+- Complex Layouts
+- Inputs, Validation, and Confirmation
+- Google Cloud Functions
+- Network Requests
+- Putting It All Together - Estimate Page
+- Search Engine Optimization (SEO)
+- Cross-Browser Support
+- Deployment
+- Google Analytics
+- Project Manager
+- MORE VIDEOS, EXTRA CONTENT
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Section 1: Introduction
 
-### `npm run build`
+### 1.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Section 2: Take It From The Top - Headers and Navigation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 1. Image Optimization
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Flexible Icons with React and SVG:  
+https://open.nytimes.com/flexible-icons-with-react-svg-973f310e6382
 
-### `npm run eject`
+Web GUI for SVGO (downside svg files):  
+https://jakearchibald.github.io/svgomg/
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Smart WebP, JPEG and PNG compression:  
+https://tinyjpg.com/
