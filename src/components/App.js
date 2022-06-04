@@ -1,12 +1,15 @@
 import React from 'react'
+import { MuiThemeProvider } from '@material-ui/core/styles'
+
 import Header from './ui/Header'
+import theme from './ui/Theme'
 
 function App() {
   return (
-    <div className='App'>
+    <MuiThemeProvider theme={theme}>
       <Header />
       Hello
-    </div>
+    </MuiThemeProvider>
   )
 }
 
