@@ -53,6 +53,18 @@ const useStyles = makeStyles((theme) => ({
     marginRight: '25px',
     height: '45px',
   },
+  menu: {
+    backgroundColor: theme.palette.common.blue,
+    color: 'white',
+    borderRadius: '0px',
+  },
+  menuItem: {
+    ...theme.typography.tab,
+    opacity: 0.7,
+    '&:hover': {
+      opacity: '1',
+    },
+  },
 }))
 
 const Header = (props) => {
@@ -159,13 +171,54 @@ const Header = (props) => {
               anchorEl={anchorEl}
               open={open}
               onClose={handleClose}
+              classes={{ paper: classes.menu }}
               MenuListProps={{ onMouseLeave: handleClose }}
+              Elevation={0}
             >
-              <MenuItem onClick={handleClose}>
+              <MenuItem
+                onClick={() => {
+                  handleClose()
+                  setValue(1)
+                }}
+                component={Link}
+                to='/services'
+                classes={{ root: classes.menuItem }}
+              >
+                Services
+              </MenuItem>
+              <MenuItem
+                onClick={() => {
+                  handleClose()
+                  setValue(1)
+                }}
+                component={Link}
+                to='/customsoftware'
+                classes={{ root: classes.menuItem }}
+              >
                 Custom Software Development
               </MenuItem>
-              <MenuItem onClick={handleClose}>Mobile App Development</MenuItem>
-              <MenuItem onClick={handleClose}>Website Development</MenuItem>
+              <MenuItem
+                onClick={() => {
+                  handleClose()
+                  setValue(1)
+                }}
+                component={Link}
+                to='/mobileapps'
+                classes={{ root: classes.menuItem }}
+              >
+                Mobile App Development
+              </MenuItem>
+              <MenuItem
+                onClick={() => {
+                  handleClose()
+                  setValue(1)
+                }}
+                component={Link}
+                to='/websites'
+                classes={{ root: classes.menuItem }}
+              >
+                Website Development
+              </MenuItem>
             </Menu>
           </Toolbar>
         </AppBar>
