@@ -16,8 +16,12 @@ export default createMuiTheme({
     },
   },
   typography: {
-    h3: {
-      fontWeight: 300,
+    tab: {
+      fontFamily: 'Roboto',
+      textTransform: 'none',
+      fontWeight: 700,
+      textSizeAdjust: 'none',
+      fontSize: '1.1rem',
     },
   },
 })
