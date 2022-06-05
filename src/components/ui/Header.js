@@ -2,9 +2,10 @@ import React from 'react'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import useScrollTrigger from '@material-ui/core/useScrollTrigger'
+import { makeStyles } from '@material-ui/core/styles'
 import Tabs from '@material-ui/core/Tabs'
 import Tab from '@material-ui/core/Tab'
-import { makeStyles } from '@material-ui/core/styles'
+import Button from '@material-ui/core/Button'
 
 import logo from '../../assets/logo.svg'
 
@@ -36,6 +37,13 @@ const useStyles = makeStyles((theme) => ({
     minWidth: 10,
     marginLeft: '25px',
   },
+  button: {
+    ...theme.typography.estimate,
+    borderRadius: '50px',
+    marginLeft: '50px',
+    marginRight: '25px',
+    height: '45px',
+  },
 }))
 
 const Header = (props) => {
@@ -53,6 +61,13 @@ const Header = (props) => {
               <Tab className={classes.tab} label='About Us'></Tab>
               <Tab className={classes.tab} label='Contact Us'></Tab>
             </Tabs>
+            <Button
+              variant='contained'
+              color='secondary'
+              className={classes.button}
+            >
+              Free Estimate
+            </Button>
           </Toolbar>
         </AppBar>
       </ElevationScroll>

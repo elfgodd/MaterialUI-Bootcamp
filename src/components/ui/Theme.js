@@ -23,5 +23,11 @@ export default createMuiTheme({
       textSizeAdjust: 'none',
       fontSize: '1.1rem',
     },
+    estimate: {
+      fontFamily: 'Pacifico',
+      fontSize: '1rem',
+      textTransform: 'none',
+      color: 'white',
+    },
   },
 })
