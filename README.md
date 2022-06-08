@@ -71,3 +71,5 @@ https://v4.mui.com/customization/breakpoints/
 useMediaQuery  
 This is a CSS media query hook for React. It listens for matches to a CSS media query. It allows the rendering of components based on whether the query matches or not.  
 https://v4.mui.com/components/use-media-query/
+
+## Section 4: Bottoms Up! Footers and Basic Layouts

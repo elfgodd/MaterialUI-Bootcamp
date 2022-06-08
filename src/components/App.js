@@ -2,6 +2,7 @@ import React from 'react'
 import { MuiThemeProvider } from '@material-ui/core/styles'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
+import Footer from './ui/Footer'
 import Header from './ui/Header'
 import theme from './ui/Theme'
 
@@ -11,7 +12,11 @@ function App() {
       <BrowserRouter>
         <Header />
         <Switch>
-          <Route exact path='/' component={() => <div>Home</div>} />
+          <Route
+            exact
+            path='/'
+            component={() => <div style={{ height: '500px' }}>Home</div>}
+          />
           <Route exact path='/services' component={() => <div>Services</div>} />
           <Route
             exact
@@ -37,6 +42,7 @@ function App() {
           />
           <Route exact path='/estimate' component={() => <div>Estimate</div>} />
         </Switch>
+        <Footer />
       </BrowserRouter>
     </MuiThemeProvider>
   )
