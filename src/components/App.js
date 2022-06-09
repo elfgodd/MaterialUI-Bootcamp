@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { MuiThemeProvider } from '@material-ui/core/styles'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
@@ -7,10 +7,17 @@ import Header from './ui/Header'
 import theme from './ui/Theme'
 
 function App() {
+  const [selectedIndex, setSelectedIndex] = useState(0)
+  const [value, setValue] = useState(0)
   return (
     <MuiThemeProvider theme={theme}>
       <BrowserRouter>
-        <Header />
+        <Header
+          value={value}
+          setValue={setValue}
+          selectedIndex={selectedIndex}
+          setSelectedIndex={setSelectedIndex}
+        />
         <Switch>
           <Route
             exact
@@ -42,7 +49,12 @@ function App() {
           />
           <Route exact path='/estimate' component={() => <div>Estimate</div>} />
         </Switch>
-        <Footer />
+        <Footer
+          value={value}
+          setValue={setValue}
+          selectedIndex={selectedIndex}
+          setSelectedIndex={setSelectedIndex}
+        />
       </BrowserRouter>
     </MuiThemeProvider>
   )
