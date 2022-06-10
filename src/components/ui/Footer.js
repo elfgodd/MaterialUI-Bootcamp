@@ -1,9 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles'
-import footerAdorment from '../../assets/FooterAdornment.svg'
 import Grid from '@material-ui/core/Grid'
 import Hidden from '@material-ui/core/Hidden'
+
+import footerAdorment from '../../assets/FooterAdornment.svg'
+import instagram from '../../assets/instagram.svg'
+import twitter from '../../assets/twitter.svg'
+
 const useStyles = makeStyles((theme) => ({
   footer: {
     backgroundColor: theme.palette.common.blue,
@@ -33,6 +37,22 @@ const useStyles = makeStyles((theme) => ({
   },
   gridItem: {
     margin: '3em',
+  },
+  icon: {
+    height: '4em',
+    width: '4em',
+    [theme.breakpoints.down('xs')]: {
+      height: '2.5em',
+      width: '2.5em',
+    },
+  },
+  socialContainer: {
+    position: 'absolute',
+    marginTop: '-6em',
+    right: '1.5em',
+    [theme.breakpoints.down('xs')]: {
+      right: '0.6em',
+    },
   },
 }))
 
@@ -204,6 +224,35 @@ const Footer = ({ value, setValue, selectedIndex, setSelectedIndex }) => {
           alt='black decorative slash'
           className={classes.adorment}
         />
+        <Grid
+          container
+          justify='flex-end'
+          spacing={2}
+          className={classes.socialContainer}
+        >
+          <Grid
+            item
+            component={'a'}
+            href='https://instagram.com'
+            rel='noopener noreferrer'
+            target='_blank'
+          >
+            <img
+              src={instagram}
+              alt='instagram logo'
+              className={classes.icon}
+            />
+          </Grid>
+          <Grid item component={'a'} href='https://twitter.com'>
+            <img
+              src={twitter}
+              alt='twitter logo'
+              className={classes.icon}
+              rel='noopener noreferrer'
+              target='_blank'
+            />
+          </Grid>
+        </Grid>
       </footer>
     </>
   )
