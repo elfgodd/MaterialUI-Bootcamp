@@ -9,6 +9,8 @@ Project 2: https://github.com/zreecespieces/material-ui-course-project-manager
 Project 1 Next.js:
 https://github.com/zreecespieces/material-ui-course-nextjs
 
+Course Link: https://udemy.com/course/implement-high-fidelity-designs-with-material-ui-and-reactjs
+
 ## What you'll learn
 
 - Create beautifully designed production applications from scratch with Material-UI
