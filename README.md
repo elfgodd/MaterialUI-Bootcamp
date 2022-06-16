@@ -75,3 +75,10 @@ This is a CSS media query hook for React. It listens for matches to a CSS media 
 https://v4.mui.com/components/use-media-query/
 
 ## Section 4: Bottoms Up! Footers and Basic Layouts
+
+## Section 5: Hitting The Ground Runnig - Animations and The Landing Page
+
+### 1. react-lottie
+
+Lottie Animation View for React (Angular, Vue)  
+https://github.com/chenqingspring/react-lottie
