@@ -226,7 +226,7 @@ const Footer = ({ value, setValue, selectedIndex, setSelectedIndex }) => {
         />
         <Grid
           container
-          justify='flex-end'
+          justifyContent='flex-end'
           spacing={2}
           className={classes.socialContainer}
         >
