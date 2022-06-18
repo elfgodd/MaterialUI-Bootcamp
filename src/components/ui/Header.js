@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: '2em',
     },
     [theme.breakpoints.down('xs')]: {
-      marginBottom: '1em',
+      marginBottom: '1.25em',
     },
   },
   logo: {
@@ -85,7 +85,7 @@ const useStyles = makeStyles((theme) => ({
     ...theme.typography.tab,
     opacity: 0.7,
     '&:hover': {
-      opacity: '1',
+      opacity: 1,
     },
   },
   drawerIcon: {
@@ -245,11 +245,11 @@ const Header = ({ value, setValue, selectedIndex, setSelectedIndex }) => {
         ))}
       </Tabs>
       <Button
+        component={Link}
+        to='/estimate'
         variant='contained'
         color='secondary'
         className={classes.button}
-        component={Link}
-        to='/estimate'
       >
         Free Estimate
       </Button>
@@ -323,7 +323,7 @@ const Header = ({ value, setValue, selectedIndex, setSelectedIndex }) => {
             divider
             button
             component={Link}
-            className={{
+            classes={{
               root: classes.drawerItemEstimate,
               selected: classes.drawerItemSelected,
             }}
@@ -331,7 +331,7 @@ const Header = ({ value, setValue, selectedIndex, setSelectedIndex }) => {
             selected={value === 5}
           >
             <ListItemText className={classes.drawerItem} disableTypography>
-              Free Estime
+              Free Estimate
             </ListItemText>
           </ListItem>
         </List>
@@ -364,7 +364,7 @@ const Header = ({ value, setValue, selectedIndex, setSelectedIndex }) => {
           </Toolbar>
         </AppBar>
       </ElevationScroll>
-      <div className={classes.toolbarMargin}></div>
+      <div className={classes.toolbarMargin} />
     </>
   )
 }
