@@ -10,6 +10,7 @@ import useMediaQuery from '@material-ui/core/useMediaQuery'
 import animationData from '../animations/landinganimation/data'
 import customSoftwareIcon from '../assets/CustomSoftwareIcon.svg'
 import mobileAppsIcon from '../assets/mobileIcon.svg'
+import websitesIcon from '../assets/websiteIcon.svg'
 
 const useStyles = makeStyles((theme) => ({
   animation: {
@@ -24,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   estimateButton: {
     ...theme.typography.estimate,
     backgroundColor: theme.palette.common.orange,
-    borderRadius: '50px',
+    borderRadius: 50,
     height: 45,
     width: 145,
     marginRight: 40,
@@ -55,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('md')]: {
       marginTop: '3em',
     },
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('xs')]: {
       marginTop: '2em',
     },
   },
@@ -75,7 +76,9 @@ const useStyles = makeStyles((theme) => ({
   },
   icon: {
     marginLeft: '2em',
-    [theme.breakpoints.down('xds')]: {},
+    [theme.breakpoints.down('xs')]: {
+      marginLeft: 0,
+    },
   },
   serviceContainer: {
     marginTop: '12em',
@@ -92,7 +95,7 @@ export default function LandingPage() {
 
   const defaultOptions = {
     loop: true,
-    autoplay: true,
+    autoplay: false,
     animationData: animationData,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
@@ -121,12 +124,24 @@ export default function LandingPage() {
               className={classes.buttonContainer}
             >
               <Grid item>
-                <Button className={classes.estimateButton} variant='contained'>
+                <Button
+                  // component={Link}
+                  to='/estimate'
+                  className={classes.estimateButton}
+                  variant='contained'
+                  // onClick={() => props.setValue(5)}
+                >
                   Free Estimate
                 </Button>
               </Grid>
               <Grid item>
-                <Button variant='outlined' className={classes.learnButtonHero}>
+                <Button
+                  //component={Link}
+                  to='/revolution'
+                  className={classes.learnButtonHero}
+                  variant='outlined'
+                  //onClick={() => props.setValue(2)}
+                >
                   <span style={{ marginRight: 10 }}>Learn More</span>
                   <ButtonArrow
                     width={15}
@@ -160,13 +175,22 @@ export default function LandingPage() {
           >
             <Typography variant='h4'>Custom Software Development</Typography>
             <Typography variant='subtitle1' className={classes.subtitle}>
-              Save Energy, Save Time, Save Money.
+              Save Energy. Save Time. Save Money.
             </Typography>
             <Typography variant='subtitle1'>
               Complete digital solutions, from investigation to{' '}
               <span className={classes.specialText}>celebration.</span>
             </Typography>
-            <Button variant='outlined' className={classes.learnButton}>
+            <Button
+              //component={Link}
+              to='/customsoftware'
+              variant='outlined'
+              className={classes.learnButton}
+              // onClick={() => {
+              //   props.setValue(1)
+              //   props.setSelectedIndex(1)
+              // }}
+            >
               <span style={{ marginRight: 10 }}>Learn More</span>
               <ButtonArrow
                 width={10}
@@ -207,7 +231,16 @@ export default function LandingPage() {
               Integrate your web experience or create a standalone app
               {matchesSM ? null : <br />}with either mobile platform.
             </Typography>
-            <Button variant='outlined' className={classes.learnButton}>
+            <Button
+              //component={Link}
+              to='/mobileapps'
+              variant='outlined'
+              className={classes.learnButton}
+              // onClick={() => {
+              //   props.setValue(1)
+              //   props.setSelectedIndex(2)
+              // }}
+            >
               <span style={{ marginRight: 10 }}>Learn More</span>
               <ButtonArrow
                 width={10}
@@ -221,6 +254,56 @@ export default function LandingPage() {
               className={classes.icon}
               alt='mobile phone icon'
               src={mobileAppsIcon}
+            />
+          </Grid>
+        </Grid>
+      </Grid>
+      <Grid item>
+        {' '}
+        {/*-----Website Software Block-----*/}
+        <Grid
+          container
+          direction='row'
+          justifyContent={matchesSM ? 'center' : undefined}
+          className={classes.serviceContainer}
+        >
+          <Grid
+            item
+            style={{
+              marginLeft: matchesSM ? 0 : '5em',
+              textAlign: matchesSM ? 'center' : undefined,
+            }}
+          >
+            <Typography variant='h4'>Website Development</Typography>
+            <Typography variant='subtitle1' className={classes.subtitle}>
+              Reach More. Discover More. Sell More.
+            </Typography>
+            <Typography variant='subtitle1'>
+              Optimized for Search Engines, built for speed.
+            </Typography>
+            <Button
+              //component={Link}
+              to='/websites'
+              variant='outlined'
+              className={classes.learnButton}
+              // onClick={() => {
+              //   props.setValue(1)
+              //   props.setSelectedIndex(3)
+              // }}
+            >
+              <span style={{ marginRight: 10 }}>Learn More</span>
+              <ButtonArrow
+                width={10}
+                height={10}
+                fill={theme.palette.common.blue}
+              />
+            </Button>
+          </Grid>
+          <Grid item>
+            <img
+              className={classes.icon}
+              alt='website icon'
+              src={websitesIcon}
             />
           </Grid>
         </Grid>
